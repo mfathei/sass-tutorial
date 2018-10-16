@@ -1,5 +1,15 @@
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
 h1 {
   color: #5173bf;
+  font-size: 26px;
 }
 
 /*# sourceMappingURL=style.css.map */

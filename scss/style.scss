@@ -1,8 +1,21 @@
+
+
 // variables
-
 $deepBlue: #5173bf;
+$h1FontSize: 26px;
+$containerWidth: 90%;
 
+// classes
+.container {
+    max-width: $containerWidth;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
 
 h1 {
     color: $deepBlue;
+    font-size: $h1FontSize;
 }
