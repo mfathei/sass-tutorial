@@ -19,3 +19,26 @@ h1 {
     color: $deepBlue;
     font-size: $h1FontSize;
 }
+
+// mixins
+@mixin banner {
+  background-color: #aabbcc;
+  h2{
+    color: blue;
+  }
+
+  li {
+    font-size: 24px;
+  }
+
+}
+
+#banner1 {
+  @include banner;
+  border: 1px solid red;
+}
+
+#banner2 {
+  @include banner;
+  border: 1px solid blue;
+}

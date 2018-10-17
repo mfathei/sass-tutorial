@@ -12,4 +12,26 @@ h1 {
   font-size: 26px;
 }
 
+#banner1 {
+  background-color: #aabbcc;
+  border: 1px solid red;
+}
+#banner1 h2 {
+  color: blue;
+}
+#banner1 li {
+  font-size: 24px;
+}
+
+#banner2 {
+  background-color: #aabbcc;
+  border: 1px solid blue;
+}
+#banner2 h2 {
+  color: blue;
+}
+#banner2 li {
+  font-size: 24px;
+}
+
 /*# sourceMappingURL=style.css.map */
