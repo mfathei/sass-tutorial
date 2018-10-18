@@ -44,6 +44,9 @@ h1 {
         li {
             float: left;
             width: 14%;
+            @include mQ(600px){
+                width: 100%;
+            }
 
             a {
                 padding: 16px;
