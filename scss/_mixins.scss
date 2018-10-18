@@ -1,0 +1,12 @@
+// mixins
+@mixin banner {
+  background-color: #aabbcc;
+  h2{
+    color: blue;
+  }
+
+  li {
+    font-size: 24px;
+  }
+
+}

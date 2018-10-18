@@ -1,9 +1,6 @@
 
-
-// variables
-$deepBlue: #5173bf;
-$h1FontSize: 26px;
-$containerWidth: 90%;
+@import 'variables';// note _ in filename is just to show sass compiler the file is not standalone file
+@import 'mixins';
 
 // classes
 .container {
@@ -18,19 +15,6 @@ $containerWidth: 90%;
 h1 {
     color: $deepBlue;
     font-size: $h1FontSize;
-}
-
-// mixins
-@mixin banner {
-  background-color: #aabbcc;
-  h2{
-    color: blue;
-  }
-
-  li {
-    font-size: 24px;
-  }
-
 }
 
 #banner1 {
