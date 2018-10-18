@@ -1,8 +1,6 @@
+@import 'variables'; // note _ in filename is just to show sass compiler the file is not standalone file
+@import 'mixins'; // classes
 
-@import 'variables';// note _ in filename is just to show sass compiler the file is not standalone file
-@import 'mixins';
-
-// classes
 .container {
     max-width: $containerWidth;
     margin: auto;
@@ -10,6 +8,11 @@
 
 .row {
     display: flex;
+    width: 100%;
+}
+
+.col-12 {
+    min-width: 50%;
 }
 
 h1 {
@@ -18,11 +21,37 @@ h1 {
 }
 
 #banner1 {
-  @include banner;
-  border: 1px solid red;
+    @include banner;
+    border: 1px solid red;
+
+    ul {
+        @include clearFix;
+    }
 }
 
 #banner2 {
-  @include banner;
-  border: 1px solid blue;
+    @include banner;
+    border: 1px solid blue;
+
+    ul {
+        width: 100%;
+        list-style: none;
+
+        li {
+            float: left;
+            width: 14%;
+
+            a {
+                padding: 16px;
+                text-align: center;
+                display: block;
+                text-decoration: none;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+        @include clearFix;
+    }
 }

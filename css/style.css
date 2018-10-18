@@ -5,6 +5,11 @@
 
 .row {
   display: flex;
+  width: 100%;
+}
+
+.col-12 {
+  min-width: 50%;
 }
 
 h1 {
@@ -20,7 +25,12 @@ h1 {
   color: blue;
 }
 #banner1 li {
-  font-size: 24px;
+  font-size: 16px;
+}
+#banner1 ul:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 #banner2 {
@@ -31,7 +41,29 @@ h1 {
   color: blue;
 }
 #banner2 li {
-  font-size: 24px;
+  font-size: 16px;
+}
+#banner2 ul {
+  width: 100%;
+  list-style: none;
+}
+#banner2 ul li {
+  float: left;
+  width: 14%;
+}
+#banner2 ul li a {
+  padding: 16px;
+  text-align: center;
+  display: block;
+  text-decoration: none;
+}
+#banner2 ul li a:hover {
+  color: #fff;
+}
+#banner2 ul:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 /*# sourceMappingURL=style.css.map */
