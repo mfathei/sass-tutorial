@@ -54,6 +54,9 @@ h1 {
                 &:hover {
                     color: #fff;
                 }
+                img {
+                    width: 100%;
+                }
             }
         }
         @include clearFix;
@@ -61,27 +64,45 @@ h1 {
 }
 
 #imagesDiv {
-    ul{
+    ul {
         list-style: none;
+
         li {
             float: left;
             box-sizing: border-box;
             text-align: center;
             width: (100% / 3);
+
             img {
                 width: 150px;
                 // margin: 20px;
                 border-radius: 50%;
             }
+
             a {
                 text-decoration: none;
                 color: $deepBlue;
                 font-weight: bold;
+
                 &:hover {
                     color: red;
                 }
             }
         }
         @include clearFix;
+    }
+}
+
+#grid {
+    ul {
+        list-style: none;
+
+        li {
+            @include grid(8,2%);
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }

@@ -64,6 +64,9 @@ h1 {
 #banner2 ul li a:hover {
   color: #fff;
 }
+#banner2 ul li a img {
+  width: 100%;
+}
 #banner2 ul:after {
   content: "";
   display: block;
@@ -95,6 +98,22 @@ h1 {
   content: "";
   display: block;
   clear: both;
+}
+
+#grid ul {
+  list-style: none;
+}
+#grid ul li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 10.75%;
+}
+#grid ul li:nth-child(8n) {
+  margin-right: 0;
+}
+#grid ul li img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

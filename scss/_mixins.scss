@@ -17,3 +17,13 @@
         clear: both;
     }
 }
+@mixin grid($cols, $mrg) {
+    float: left;
+    margin-right: $mrg;
+    margin-bottom: $mrg;
+    width: ((100% - (($cols - 1) * $mrg)) / $cols);
+
+    &:nth-child(#{$cols}n) {
+        margin-right: 0;
+    }
+}
