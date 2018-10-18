@@ -20,7 +20,7 @@
 }
 
 h1 {
-    color: $deepBlue;
+    color: lighten($deepBlue, 6);
     font-size: $h1FontSize;
 }
 
